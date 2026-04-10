@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula09</title>
+</head>
+<body>
+
+    <h1>Formulario</h1>
+
+    <form action="processarForm.php" method="get">
+        <table border="2">
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">E-mail pessoal:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email2">E-mail (pattern):</label></td>
+                <td><input type="email" id="email2" name="email2"></td>
+            </tr>
+
+            <tr>
+                <td><label for="senha">Senha:</label></td>
+                <td><input type="password" id="senha" name="senha"></td>
+            </tr>
+
+            <tr>
+                <td><label for="idade">Idade:</label></td>
+                <td><input type="number" id="idade" name="idade"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="comentario">Deixe um comentário</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Matéria de interesse:</label></td>
+                <td><label>Tipo de Viagem:</label></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="backend" value="Backend"> Backend<br>
+                    <input type="checkbox" name="frontend" value="FrontEnd"> FrontEnd<br>
+                    <input type="checkbox" name="fullstack" value="FullStack"> FullStack<br>
+                </td>
+
+                <td>
+                    <input type="radio" id="negocios" name="viagem" value="negocios">
+                    <label for="negocios">Negócios</label><br>
+
+                    <input type="radio" id="lazer" name="viagem" value="lazer">
+                    <label for="lazer">Lazer</label><br>
+
+                    <input type="radio" id="turismo" name="viagem" value="turismo">
+                    <label for="turismo">Turismo</label><br>
+
+                    <input type="radio" id="academico" name="viagem" value="academico">
+                    <label for="academico">Acadêmico</label><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="esportes">Esporte favorito:</label>
+                    <select id="esportes" name="esportes" size="4">
+                        <option value="futebol">Futebol</option>
+                        <option value="basquete">Basquete</option>
+                        <option value="volei">Vôlei</option>
+                        <option value="tenis">Tênis</option>
+                        <option value="natacao">Natação</option>
+                    </select>
+                </td>
+
+                <td>
+                    <label for="investimentos">Investimentos:</label>
+                    <select id="investimentos" name="investimentos">
+                        <option value="poupanca">Poupança</option>
+                        <option value="cdb">CDB</option>
+                        <option value="tesouro">Tesouro Direto</option>
+                        <option value="fii">Fundos Imobiliários</option>
+                        <option value="cdi">CDI</option>
+                        <option value="debentures">Debêntures</option>
+                        <option value="cripto">Criptomoedas</option>
+                        <option value="acoes">Ações</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="cor">Escolha uma cor:</label>
+                    <input type="color" id="cor" name="cor" value="#000000">
+                </td>
+
+                <td>
+                    <label for="arquivo">Selecione um arquivo:</label>
+                    <br>
+                    <input type="file" id="arquivo" value="Escolher Arquivo" name="Escolher Arquivo">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="data">Data Nascimento:</label>
+                    <input type="date" id="data" name="data" required>
+
+                    <label for="time">Hora:</label>
+                    <input type="time" name="time" id="time">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
